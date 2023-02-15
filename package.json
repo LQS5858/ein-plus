@@ -1,0 +1,82 @@
+{
+  "name": "einyun-ui-plus",
+  "author": "style'me",
+  "version": "1.0.0",
+  "private": false,
+  "main": "./dist/einyun-ui-plus.umd.js",
+  "module": "./dist/einyun-ui-plus.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/einyun-ui-plus.es.js",
+      "require": "./dist/einyun-ui-plus.umd.js"
+    }
+  },
+  "description": "einyun-ui-plus",
+  "keywords": [
+    "vue",
+    "vue3",
+    "vuejs",
+    "vite",
+    "einyun-ui-plus",
+    "ui",
+    "vueui",
+    "vertical",
+    "horizontal",
+    "components",
+    "vue组件库",
+    "vue3组件库"
+  ],
+  "files": [
+    "dist/*"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "bugs": {
+    "url": "",
+    "email": "1046674804@qq.com"
+  },
+  "scripts": {
+    "dev": "vite --port 3002",
+    "build": "vite build",
+    "build:html": "vite build --config ./build/build.js",
+    "preview": "vite preview",
+    "test": "jest --runInBand",
+    "cz": "git-cz"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "decimal.js": "^10.4.3",
+    "element-plus": "^2.2.30"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vue/reactivity": "^3.2.31",
+    "@vue/test-utils": "^2.0.0-rc.18",
+    "babel-jest": "26.*",
+    "babel-preset-vite": "^1.0.4",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.13.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "highlight.js": "^11.4.0",
+    "jest": "26.6.3",
+    "pinia": "^2.0.12",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.6.0",
+    "vite": "^4.1.1",
+    "vite-plugin-md": "^0.12.4",
+    "vue": "^3.2.25",
+    "vue-jest": "^5.0.0-alpha.10",
+    "vue-router": "^4.0.14"
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

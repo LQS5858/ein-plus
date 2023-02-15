@@ -1,0 +1,31 @@
+<!-- html -->
+<template>
+  <ein-space :size="[10, 10]">
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+    <ein-button>按钮</ein-button>
+  </ein-space>
+</template>
