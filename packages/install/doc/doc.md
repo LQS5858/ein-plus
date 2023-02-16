@@ -21,7 +21,7 @@ yarn add einyun-ui-plus
 import { createApp } from "vue";
 import App from "@/App.vue";
 import EinyunUiPlus from "einyun-ui-plus";
-import "../node_modules/einyun-ui-plus/dist/style.css";
+import "einyun-ui-plus/dist/style.css";
 
 const app = createApp(App);
 app.use(EinyunUiPlus);

@@ -39,7 +39,12 @@ export default [
         'title-cn': '搜索',
         'title-en': 'Space',
         path: '/einyun-ui/search'
-      }
+      },
+      // {
+      //   'title-cn': '带校验输入框',
+      //   'title-en': 'Space',
+      //   path: '/einyun-ui/input'
+      // }
     ]
   },
 ]

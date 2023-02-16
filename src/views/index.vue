@@ -1,5 +1,6 @@
 <template>
-  <HeaderBlock></HeaderBlock>
+  <HeaderBlock v-if="$$($store,'curSize')!=='h5'"></HeaderBlock>
+  <H5Header v-else></H5Header>
   <div class="contentBox">
     <div class="imgLogo">
       <img src="../assets/logo.png"
@@ -12,9 +13,9 @@
       </p>
       <div class="buttonGroups">
         <ein-button type="primary"
-                  round
-                  style="padding: 15px 50px; margin-right: 2vw; font-size: 17px"
-                  @click="toComponents">立即上手</ein-button>
+                    round
+                    style="padding: 15px 50px; margin-right: 2vw; font-size: 17px"
+                    @click="toComponents">立即上手</ein-button>
         <!-- <ein-button round
                   icon="ein-icon-github"
                   style="padding: 15px 50px; margin-left: 2vw; font-size: 17px"
@@ -70,8 +71,11 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import HeaderBlock from '@/components/header-block'
+import H5Header from '@/components/h5/header-block'
+import { useMainStore } from '@/store/index'
 import { reactive } from 'vue'
 const router = useRouter()
+const $store = useMainStore()
 const state = reactive({
   devoteList: [
     {

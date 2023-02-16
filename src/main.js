@@ -5,6 +5,7 @@ import einUI from "../packages/index";
 import hljs from "highlight.js";
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import directives from '../packages/directives/common'
 import { optionalChaining } from '@/utils/common'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
@@ -18,7 +19,9 @@ app.use(einUI);
 app.use(router);
 app.use(createPinia());
 app.use(ElementPlus)
-
+Object.keys(directives).forEach(key => {
+  app.directive(key, directives?.[key])
+})
 app.config.globalProperties.$$ = optionalChaining
 hljs.configure({
   ignoreUnescapedHTML: true,

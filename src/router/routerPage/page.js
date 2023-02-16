@@ -123,6 +123,16 @@ export default [
           ipad: () => import('/packages/throttle-button/doc/doc.md'),
           notebook: () => import('/packages/throttle-button/doc/doc.md')
         }
+      },
+      {
+        path: 'input',
+        name: 'input',
+        components: {
+          pc: () => import('/packages/input/doc/doc.md'),
+          h5: () => import('/packages/input/doc/doc.md'),
+          ipad: () => import('/packages/input/doc/doc.md'),
+          notebook: () => import('/packages/input/doc/doc.md')
+        }
       }
     ]
   }

@@ -1,5 +1,6 @@
 <template>
-  <HeaderBlock></HeaderBlock>
+  <HeaderBlock v-if="$$($store,'curSize')!=='h5'"></HeaderBlock>
+  <H5Header v-else></H5Header>
   <div class="einyun-ui-doc">
     <aside>
       <div class="list-box">
@@ -39,6 +40,7 @@ import { reactive, ref, watchEffect } from 'vue'
 import { useRouter } from 'vue-router'
 import MenuList from '@/const/menuList.js'
 import HeaderBlock from '@/components/header-block'
+import H5Header from '@/components/h5/header-block'
 import { useMainStore } from '@/store/index'
 const $store = useMainStore()
 const router = useRouter()

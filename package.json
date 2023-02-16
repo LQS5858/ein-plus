@@ -46,7 +46,8 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.10",
     "decimal.js": "^10.4.3",
-    "element-plus": "^2.2.30"
+    "element-plus": "^2.2.30",
+    "vee-validate": "^4.7.4"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",

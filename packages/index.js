@@ -9,6 +9,7 @@ import EinTabs from "./tabs/index";
 import EinSpace from "./Space/index";
 import EinSearch from './search-pannel'
 import EinThrottleButton from './throttle-button'
+import EinInput from './input'
 
 import EinBadge from './badge/index'
 //存在所有组件
@@ -18,6 +19,7 @@ const components = [
   EinBacktop,
   EinThrottleButton,
   EinSearchField,
+  EinInput,
   EinSearch,
   EinBadge,
   EinTabs,
@@ -44,6 +46,7 @@ export {
   // 以下是具体的组件列表
   EinButton,
   EinTable,
+  EinInput,
   EinBacktop,
   EinThrottleButton,
   EinSearchField,

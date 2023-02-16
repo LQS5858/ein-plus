@@ -12,7 +12,6 @@ import { useMainStore } from '@/store'
 import headerBlockVue from './components/header-block.vue'
 
 const mainStore = useMainStore()
-console.log('size', mainStore, mainStore.curSize)
 onMounted(() => {
   listenScreenSize()
 })
